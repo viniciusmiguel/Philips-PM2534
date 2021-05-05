@@ -1,0 +1,1628 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Components": [
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "Name": "background",
+            "X": 0,
+            "Y": 0,
+            "Width": 480,
+            "Height": 272,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Image",
+            "RelativeFilename": "VinisLabLogoSquare.png",
+            "Alpha": 255,
+            "Name": "logo",
+            "X": 140,
+            "Y": 36,
+            "Width": 200,
+            "Height": 200,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId40",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textArea1",
+            "X": 177,
+            "Y": 236,
+            "Width": 126,
+            "Height": 18,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "delay",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "Type": "ActionDelay",
+              "Duration": 3000
+            }
+          },
+          {
+            "InteractionName": "ChangeToMain",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "delay"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Main"
+            }
+          }
+        ],
+        "Name": "Splash",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
+      },
+      {
+        "Components": [
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 31,
+              "Green": 31,
+              "Blue": 31
+            },
+            "Alpha": 255,
+            "Name": "configBackground",
+            "X": 0,
+            "Y": 0,
+            "Width": 480,
+            "Height": 272,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Components": [
+              {
+                "Components": [
+                  {
+                    "Type": "DynamicGraph",
+                    "DataSeed": -1387502510,
+                    "NumberOfValues": 100,
+                    "MaxY": 100.0,
+                    "MinY": 0.0,
+                    "Precision": "0.0001",
+                    "UseCustomVisibleDataPointRange": false,
+                    "FirstIndex": 0,
+                    "LastIndex": 99,
+                    "MapDataPointIndexToCustomValue": false,
+                    "XAxisOffset": 0.0,
+                    "XAxisScale": 1.0,
+                    "InsertRandomValues": true,
+                    "Alpha": 255,
+                    "LabelSizeTop": 0,
+                    "LabelSizeBottom": 0,
+                    "LabelSizeLeft": 0,
+                    "LabelSizeRight": 0,
+                    "PaddingTop": 0,
+                    "PaddingBottom": 0,
+                    "PaddingLeft": 0,
+                    "PaddingRight": 0,
+                    "GraphType": "GraphWrapClear",
+                    "GraphDrawers": [
+                      {
+                        "Type": "LineDrawer",
+                        "LineWidth": 2,
+                        "Color": {
+                          "Red": 0,
+                          "Green": 255,
+                          "Blue": 22
+                        },
+                        "Alpha": 255
+                      }
+                    ],
+                    "XAxisGrid": {
+                      "Type": "GraphGrid",
+                      "Color": {
+                        "Red": 255,
+                        "Green": 255,
+                        "Blue": 255
+                      },
+                      "Interval": 10.0,
+                      "LineWidth": 1,
+                      "Alpha": 32
+                    },
+                    "YAxisGrid": {
+                      "Type": "GraphGrid",
+                      "Color": {
+                        "Red": 255,
+                        "Green": 255,
+                        "Blue": 255
+                      },
+                      "Interval": 50.0,
+                      "LineWidth": 1,
+                      "Alpha": 137
+                    },
+                    "MinorYAxisGrid": {
+                      "Type": "GraphGrid",
+                      "Color": {
+                        "Red": 89,
+                        "Green": 89,
+                        "Blue": 89
+                      },
+                      "Interval": 10.0,
+                      "LineWidth": 1,
+                      "Alpha": 255
+                    },
+                    "XAxisLabel": {
+                      "Type": "GraphLabel",
+                      "Interval": 10.0,
+                      "NumberOfDecimals": 1,
+                      "DecimalSeparator": "Point",
+                      "TextColor": {
+                        "Red": 240,
+                        "Green": 240,
+                        "Blue": 240
+                      },
+                      "TextId": "SingleUseId5",
+                      "Alpha": 255,
+                      "TextRotation": "0",
+                      "Position": "Bottom"
+                    },
+                    "YAxisLabel": {
+                      "Type": "GraphLabel",
+                      "Interval": 10.0,
+                      "NumberOfDecimals": 2,
+                      "DecimalSeparator": "Point",
+                      "TextColor": {
+                        "Red": 20,
+                        "Green": 151,
+                        "Blue": 197
+                      },
+                      "TextId": "SingleUseId3",
+                      "Alpha": 255,
+                      "TextRotation": "0",
+                      "Position": "Left"
+                    },
+                    "Name": "graph",
+                    "X": 0,
+                    "Y": 0,
+                    "Width": 420,
+                    "Height": 238,
+                    "Visible": true,
+                    "LockPosition": false,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Type": "ButtonWithIcon",
+                    "Pressed": "__designer\\Dark_Buttons_Round_Edge_icon_button_pressed.png",
+                    "Released": "__designer\\Dark_Buttons_Round_Edge_icon_button.png",
+                    "Alpha": 255,
+                    "IconPressed": "__designer\\Dark_Icons_Done_32.png",
+                    "IconReleased": "__designer\\Dark_Icons_Done_32.png",
+                    "IconX": 14,
+                    "IconY": 14,
+                    "IconHeight": 32,
+                    "IconWidth": 32,
+                    "IconStyle": "Icon11",
+                    "Name": "btnSaveGraph",
+                    "X": 420,
+                    "Y": 0,
+                    "Width": 60,
+                    "Height": 60,
+                    "Visible": true,
+                    "LockPosition": false,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  }
+                ],
+                "Type": "Container",
+                "IsCacheableContainer": false,
+                "Name": "WavePage",
+                "X": 0,
+                "Y": 0,
+                "Width": 480,
+                "Height": 238,
+                "Visible": true,
+                "LockPosition": false,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Components": [
+                  {
+                    "Type": "ButtonWithLabel",
+                    "Pressed": "__designer\\Dark_Buttons_Round_Edge_icon_button_pressed.png",
+                    "Released": "__designer\\Dark_Buttons_Round_Edge_icon_button.png",
+                    "Alpha": 255,
+                    "TextId": "SingleUseId9",
+                    "ReleasedColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "PressedColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "TextRotation": "0",
+                    "Name": "btnVoltDc",
+                    "X": 0,
+                    "Y": 172,
+                    "Width": 60,
+                    "Height": 60,
+                    "Visible": true,
+                    "LockPosition": false,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Type": "ButtonWithLabel",
+                    "Pressed": "__designer\\Dark_Buttons_Round_Edge_icon_button_pressed.png",
+                    "Released": "__designer\\Dark_Buttons_Round_Edge_icon_button.png",
+                    "Alpha": 255,
+                    "TextId": "SingleUseId14",
+                    "ReleasedColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "PressedColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "TextRotation": "0",
+                    "Name": "btnCurDc",
+                    "X": 281,
+                    "Y": 172,
+                    "Width": 60,
+                    "Height": 60,
+                    "Visible": true,
+                    "LockPosition": false,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Type": "ButtonWithLabel",
+                    "Pressed": "__designer\\Dark_Buttons_Round_Edge_icon_button_pressed.png",
+                    "Released": "__designer\\Dark_Buttons_Round_Edge_icon_button.png",
+                    "Alpha": 255,
+                    "TextId": "SingleUseId13",
+                    "ReleasedColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "PressedColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "TextRotation": "0",
+                    "Name": "btnCurAc",
+                    "X": 350,
+                    "Y": 172,
+                    "Width": 60,
+                    "Height": 60,
+                    "Visible": true,
+                    "LockPosition": false,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Type": "ButtonWithLabel",
+                    "Pressed": "__designer\\Dark_Buttons_Round_Edge_icon_button_pressed.png",
+                    "Released": "__designer\\Dark_Buttons_Round_Edge_icon_button.png",
+                    "Alpha": 255,
+                    "TextId": "SingleUseId12",
+                    "ReleasedColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "PressedColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "TextRotation": "0",
+                    "Name": "btnRes4w",
+                    "X": 210,
+                    "Y": 172,
+                    "Width": 60,
+                    "Height": 60,
+                    "Visible": true,
+                    "LockPosition": false,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Type": "ButtonWithLabel",
+                    "Pressed": "__designer\\Dark_Buttons_Round_Edge_icon_button_pressed.png",
+                    "Released": "__designer\\Dark_Buttons_Round_Edge_icon_button.png",
+                    "Alpha": 255,
+                    "TextId": "SingleUseId11",
+                    "ReleasedColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "PressedColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "TextRotation": "0",
+                    "Name": "btnRes2w",
+                    "X": 137,
+                    "Y": 172,
+                    "Width": 60,
+                    "Height": 60,
+                    "Visible": true,
+                    "LockPosition": false,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Type": "ButtonWithLabel",
+                    "Pressed": "__designer\\Dark_Buttons_Round_Edge_icon_button_pressed.png",
+                    "Released": "__designer\\Dark_Buttons_Round_Edge_icon_button.png",
+                    "Alpha": 255,
+                    "TextId": "SingleUseId10",
+                    "ReleasedColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "PressedColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "TextRotation": "0",
+                    "Name": "btnVoltAc",
+                    "X": 68,
+                    "Y": 172,
+                    "Width": 60,
+                    "Height": 60,
+                    "Visible": true,
+                    "LockPosition": false,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Type": "ButtonWithLabel",
+                    "Pressed": "__designer\\Dark_Buttons_Round_Edge_icon_button_pressed.png",
+                    "Released": "__designer\\Dark_Buttons_Round_Edge_icon_button.png",
+                    "Alpha": 255,
+                    "TextId": "SingleUseId15",
+                    "ReleasedColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "PressedColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "TextRotation": "0",
+                    "Name": "btnTemp",
+                    "X": 420,
+                    "Y": 172,
+                    "Width": 60,
+                    "Height": 60,
+                    "Visible": true,
+                    "LockPosition": false,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Type": "TextArea",
+                    "TextId": "SingleUseId20",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 10,
+                      "Green": 255,
+                      "Blue": 6
+                    },
+                    "Alpha": 255,
+                    "AutoSize": true,
+                    "LineSpacing": 0,
+                    "Name": "txtManualRange",
+                    "X": 30,
+                    "Y": 146,
+                    "Width": 84,
+                    "Height": 14,
+                    "Visible": true,
+                    "LockPosition": false,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Type": "TextArea",
+                    "TextId": "SingleUseId25",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 10,
+                      "Green": 255,
+                      "Blue": 6
+                    },
+                    "Alpha": 255,
+                    "AutoSize": true,
+                    "LineSpacing": 0,
+                    "Name": "txtHold",
+                    "X": 422,
+                    "Y": 146,
+                    "Width": 28,
+                    "Height": 14,
+                    "Visible": true,
+                    "LockPosition": false,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Type": "TextArea",
+                    "TextId": "SingleUseId24",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 10,
+                      "Green": 255,
+                      "Blue": 6
+                    },
+                    "Alpha": 255,
+                    "AutoSize": true,
+                    "LineSpacing": 0,
+                    "Name": "txtNull",
+                    "X": 373,
+                    "Y": 146,
+                    "Width": 28,
+                    "Height": 14,
+                    "Visible": true,
+                    "LockPosition": false,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Type": "TextArea",
+                    "TextId": "SingleUseId23",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 10,
+                      "Green": 255,
+                      "Blue": 6
+                    },
+                    "Alpha": 255,
+                    "AutoSize": true,
+                    "LineSpacing": 0,
+                    "Name": "txtFilt",
+                    "X": 311,
+                    "Y": 146,
+                    "Width": 42,
+                    "Height": 14,
+                    "Visible": true,
+                    "LockPosition": false,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Type": "TextArea",
+                    "TextId": "SingleUseId22",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 10,
+                      "Green": 255,
+                      "Blue": 6
+                    },
+                    "Alpha": 255,
+                    "AutoSize": true,
+                    "LineSpacing": 0,
+                    "Name": "txtSpeed",
+                    "X": 246,
+                    "Y": 146,
+                    "Width": 49,
+                    "Height": 14,
+                    "Visible": true,
+                    "LockPosition": false,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Type": "TextArea",
+                    "TextId": "SingleUseId21",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 10,
+                      "Green": 255,
+                      "Blue": 6
+                    },
+                    "Alpha": 255,
+                    "AutoSize": true,
+                    "LineSpacing": 0,
+                    "Name": "txtSTrig",
+                    "X": 130,
+                    "Y": 146,
+                    "Width": 98,
+                    "Height": 14,
+                    "Visible": true,
+                    "LockPosition": false,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Type": "TextArea",
+                    "TextId": "SingleUseId17",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 10,
+                      "Green": 255,
+                      "Blue": 6
+                    },
+                    "Alpha": 255,
+                    "AutoSize": true,
+                    "LineSpacing": 0,
+                    "Name": "DisplayUnit",
+                    "X": 373,
+                    "Y": 62,
+                    "Width": 64,
+                    "Height": 64,
+                    "Visible": true,
+                    "LockPosition": false,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Type": "TextArea",
+                    "TextId": "SingleUseId6",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 10,
+                      "Green": 255,
+                      "Blue": 6
+                    },
+                    "Alpha": 255,
+                    "AutoSize": false,
+                    "LineSpacing": 0,
+                    "Name": "Display",
+                    "X": 43,
+                    "Y": 64,
+                    "Width": 311,
+                    "Height": 68,
+                    "Visible": true,
+                    "LockPosition": false,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Type": "TextArea",
+                    "TextId": "SingleUseId16",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 10,
+                      "Green": 255,
+                      "Blue": 6
+                    },
+                    "Alpha": 255,
+                    "AutoSize": true,
+                    "LineSpacing": 0,
+                    "Name": "MeasurementName",
+                    "X": 15,
+                    "Y": 14,
+                    "Width": 171,
+                    "Height": 18,
+                    "Visible": true,
+                    "LockPosition": false,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  }
+                ],
+                "Type": "Container",
+                "IsCacheableContainer": false,
+                "Name": "HomePage",
+                "X": 0,
+                "Y": 0,
+                "Width": 480,
+                "Height": 238,
+                "Visible": true,
+                "LockPosition": false,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Components": [
+                  {
+                    "Type": "DynamicGraph",
+                    "DataSeed": 1555320732,
+                    "NumberOfValues": 100,
+                    "MaxY": 100.0,
+                    "MinY": 0.0,
+                    "Precision": "0.1",
+                    "UseCustomVisibleDataPointRange": false,
+                    "FirstIndex": 0,
+                    "LastIndex": 99,
+                    "MapDataPointIndexToCustomValue": false,
+                    "XAxisOffset": 0.0,
+                    "XAxisScale": 1.0,
+                    "InsertRandomValues": true,
+                    "Alpha": 255,
+                    "LabelSizeTop": 0,
+                    "LabelSizeBottom": 0,
+                    "LabelSizeLeft": 0,
+                    "LabelSizeRight": 0,
+                    "PaddingTop": 0,
+                    "PaddingBottom": 0,
+                    "PaddingLeft": 0,
+                    "PaddingRight": 0,
+                    "GraphType": "GraphWrapClear",
+                    "GraphDrawers": [
+                      {
+                        "Type": "HistogramDrawer",
+                        "BarWidth": 2,
+                        "BarOffset": 0,
+                        "Color": {
+                          "Red": 20,
+                          "Green": 151,
+                          "Blue": 197
+                        },
+                        "Alpha": 255
+                      }
+                    ],
+                    "YAxisGrid": {
+                      "Type": "GraphGrid",
+                      "Color": {
+                        "Red": 255,
+                        "Green": 255,
+                        "Blue": 255
+                      },
+                      "Interval": 10.0,
+                      "LineWidth": 1,
+                      "Alpha": 57
+                    },
+                    "Name": "histogram",
+                    "X": 65,
+                    "Y": 0,
+                    "Width": 415,
+                    "Height": 238,
+                    "Visible": true,
+                    "LockPosition": false,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Type": "TextArea",
+                    "TextId": "SingleUseId42",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "Alpha": 255,
+                    "AutoSize": true,
+                    "LineSpacing": 0,
+                    "Name": "txtHisMin",
+                    "X": 20,
+                    "Y": 218,
+                    "Width": 21,
+                    "Height": 14,
+                    "Visible": true,
+                    "LockPosition": false,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Type": "TextArea",
+                    "TextId": "SingleUseId41",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "Alpha": 255,
+                    "AutoSize": true,
+                    "LineSpacing": 0,
+                    "Name": "txtHisMax",
+                    "X": 20,
+                    "Y": 9,
+                    "Width": 21,
+                    "Height": 14,
+                    "Visible": true,
+                    "LockPosition": false,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  }
+                ],
+                "Type": "Container",
+                "IsCacheableContainer": false,
+                "Name": "HistogranPage",
+                "X": 0,
+                "Y": 0,
+                "Width": 480,
+                "Height": 238,
+                "Visible": true,
+                "LockPosition": false,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              }
+            ],
+            "Type": "SwipeContainer",
+            "SwipeCutoff": 50,
+            "ShowPageIndicator": false,
+            "PageIndicatorX": 240,
+            "PageIndicatorY": 3,
+            "CenteredX": true,
+            "IndicatorImageNormal": "",
+            "IndicatorImageHighlight": "",
+            "EndSwipeElasticWidth": 50,
+            "SelectedPage": "HomePage",
+            "Name": "SwipeContainer",
+            "X": 0,
+            "Y": 34,
+            "Width": 480,
+            "Height": 238,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Components": [
+              {
+                "Components": [
+                  {
+                    "Type": "DigitalClock",
+                    "TextColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "TextId": "SingleUseId7",
+                    "DisplaySeconds": true,
+                    "DisplayLeadingZeroForHourIndicator": true,
+                    "Alpha": 255,
+                    "UseAmPm": false,
+                    "InitialHour": 10,
+                    "InitialMinute": 10,
+                    "InitialSecond": 0,
+                    "Name": "Clock",
+                    "X": 359,
+                    "Y": 2,
+                    "Width": 76,
+                    "Height": 19,
+                    "Visible": true,
+                    "LockPosition": false,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Type": "TextArea",
+                    "TextId": "SingleUseId8",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "Alpha": 255,
+                    "AutoSize": false,
+                    "LineSpacing": 0,
+                    "Name": "TextIp",
+                    "X": 6,
+                    "Y": 4,
+                    "Width": 133,
+                    "Height": 16,
+                    "Visible": true,
+                    "LockPosition": false,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Type": "TextArea",
+                    "TextId": "SingleUseId19",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "Alpha": 255,
+                    "AutoSize": true,
+                    "LineSpacing": 0,
+                    "Name": "TextRemote",
+                    "X": 160,
+                    "Y": 4,
+                    "Width": 42,
+                    "Height": 14,
+                    "Visible": true,
+                    "LockPosition": false,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  }
+                ],
+                "Type": "Container",
+                "IsCacheableContainer": false,
+                "Name": "HeaderContainer",
+                "X": 0,
+                "Y": 242,
+                "Width": 450,
+                "Height": 30,
+                "Visible": true,
+                "LockPosition": false,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Type": "Line",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "Alpha": 255,
+                "StartX": 5,
+                "StartY": 5,
+                "EndX": 172,
+                "EndY": 5,
+                "LineWidth": 2,
+                "LineEndingStyle": "Round",
+                "Name": "line1",
+                "X": 1,
+                "Y": 172,
+                "Width": 178,
+                "Height": 15,
+                "Visible": true,
+                "LockPosition": false,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Type": "Line",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "FileNameImage": "",
+                "Alpha": 255,
+                "StartX": 3,
+                "StartY": 5,
+                "EndX": 111,
+                "EndY": 5,
+                "LineWidth": 2,
+                "LineEndingStyle": "Round",
+                "Name": "line2",
+                "X": 182,
+                "Y": 172,
+                "Width": 117,
+                "Height": 15,
+                "Visible": true,
+                "LockPosition": false,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Pressed": "__designer\\Dark_Buttons_Round_Edge_icon_button_pressed.png",
+                "Released": "__designer\\Dark_Buttons_Round_Edge_icon_button.png",
+                "Alpha": 255,
+                "TextId": "SingleUseId27",
+                "ReleasedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0",
+                "Style": "Style1",
+                "Name": "btnRangeDown",
+                "X": -1,
+                "Y": 179,
+                "Width": 60,
+                "Height": 60,
+                "Visible": true,
+                "LockPosition": false,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Pressed": "__designer\\Dark_Buttons_Round_Edge_icon_button_pressed.png",
+                "Released": "__designer\\Dark_Buttons_Round_Edge_icon_button.png",
+                "Alpha": 255,
+                "TextId": "SingleUseId28",
+                "ReleasedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0",
+                "Style": "Style1",
+                "Name": "btnRangeUp",
+                "X": 59,
+                "Y": 179,
+                "Width": 60,
+                "Height": 60,
+                "Visible": true,
+                "LockPosition": false,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Pressed": "__designer\\Dark_Buttons_Round_Edge_icon_button_pressed.png",
+                "Released": "__designer\\Dark_Buttons_Round_Edge_icon_button.png",
+                "Alpha": 255,
+                "TextId": "SingleUseId29",
+                "ReleasedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0",
+                "Style": "Style1",
+                "Name": "BtnRange",
+                "X": 119,
+                "Y": 179,
+                "Width": 60,
+                "Height": 60,
+                "Visible": true,
+                "LockPosition": false,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Pressed": "__designer\\Dark_Buttons_Round_Edge_icon_button_pressed.png",
+                "Released": "__designer\\Dark_Buttons_Round_Edge_icon_button.png",
+                "Alpha": 255,
+                "TextId": "SingleUseId31",
+                "ReleasedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0",
+                "Style": "Style1",
+                "Name": "btnSpeed",
+                "X": 299,
+                "Y": 179,
+                "Width": 60,
+                "Height": 60,
+                "Visible": true,
+                "LockPosition": false,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Pressed": "__designer\\Dark_Buttons_Round_Edge_icon_button_pressed.png",
+                "Released": "__designer\\Dark_Buttons_Round_Edge_icon_button.png",
+                "Alpha": 255,
+                "TextId": "SingleUseId32",
+                "ReleasedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0",
+                "Style": "Style1",
+                "Name": "btnFilter",
+                "X": 361,
+                "Y": 179,
+                "Width": 60,
+                "Height": 60,
+                "Visible": true,
+                "LockPosition": false,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Type": "TextArea",
+                "TextId": "SingleUseId33",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 232,
+                  "Green": 232,
+                  "Blue": 232
+                },
+                "Alpha": 255,
+                "AutoSize": true,
+                "LineSpacing": 0,
+                "Name": "txtRanging",
+                "X": 5,
+                "Y": 161,
+                "Width": 49,
+                "Height": 14,
+                "Visible": true,
+                "LockPosition": false,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Type": "TextArea",
+                "TextId": "SingleUseId34",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 224,
+                  "Green": 224,
+                  "Blue": 224
+                },
+                "Alpha": 255,
+                "AutoSize": true,
+                "LineSpacing": 0,
+                "Name": "txtTrigger",
+                "X": 184,
+                "Y": 161,
+                "Width": 49,
+                "Height": 14,
+                "Visible": true,
+                "LockPosition": false,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Pressed": "__designer\\Dark_Buttons_Round_Edge_icon_button_pressed.png",
+                "Released": "__designer\\Dark_Buttons_Round_Edge_icon_button.png",
+                "Alpha": 255,
+                "TextId": "SingleUseId35",
+                "ReleasedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0",
+                "Style": "Style1",
+                "Name": "btnReset",
+                "X": 358,
+                "Y": 106,
+                "Width": 60,
+                "Height": 60,
+                "Visible": true,
+                "LockPosition": false,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Pressed": "__designer\\Dark_Buttons_Round_Edge_icon_button_pressed.png",
+                "Released": "__designer\\Dark_Buttons_Round_Edge_icon_button.png",
+                "Alpha": 255,
+                "TextId": "SingleUseId36",
+                "ReleasedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0",
+                "Style": "Style1",
+                "Name": "btnCal",
+                "X": 420,
+                "Y": 107,
+                "Width": 60,
+                "Height": 60,
+                "Visible": true,
+                "LockPosition": false,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Pressed": "__designer\\Dark_Buttons_Round_Edge_icon_button_pressed.png",
+                "Released": "__designer\\Dark_Buttons_Round_Edge_icon_button.png",
+                "Alpha": 255,
+                "TextId": "SingleUseId37",
+                "ReleasedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0",
+                "Style": "Style1",
+                "Name": "btnTrigSingle",
+                "X": 239,
+                "Y": 179,
+                "Width": 60,
+                "Height": 60,
+                "Visible": true,
+                "LockPosition": false,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Pressed": "__designer\\Blue_Buttons_Round_Edge_icon_button_pressed.png",
+                "Released": "__designer\\Blue_Buttons_Round_Edge_icon_button.png",
+                "Alpha": 255,
+                "TextId": "SingleUseId38",
+                "ReleasedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0",
+                "Name": "btnCheck",
+                "X": 299,
+                "Y": 106,
+                "Width": 60,
+                "Height": 60,
+                "Visible": true,
+                "LockPosition": false,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Pressed": "__designer\\Dark_Buttons_Round_Edge_icon_button_pressed.png",
+                "Released": "__designer\\Dark_Buttons_Round_Edge_icon_button.png",
+                "Alpha": 255,
+                "TextId": "SingleUseId39",
+                "ReleasedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0",
+                "Style": "Style1",
+                "Name": "btnNull",
+                "X": 421,
+                "Y": 179,
+                "Width": 60,
+                "Height": 60,
+                "Visible": true,
+                "LockPosition": false,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Pressed": "__designer\\Dark_Buttons_Round_Edge_icon_button_pressed.png",
+                "Released": "__designer\\Dark_Buttons_Round_Edge_icon_button.png",
+                "Alpha": 255,
+                "TextId": "SingleUseId30",
+                "ReleasedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0",
+                "Style": "Style1",
+                "Name": "btnTriggerInt",
+                "X": 179,
+                "Y": 179,
+                "Width": 60,
+                "Height": 60,
+                "Visible": true,
+                "LockPosition": false,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              }
+            ],
+            "Type": "SlideMenu",
+            "FileNameBackground": "__designer\\Dark_Backgrounds_Main_bg_480x272px.png",
+            "BackgroundX": 0,
+            "BackgroundY": 0,
+            "UseButton": true,
+            "FileNameButtonPressed": "__designer\\Dark_Icons_Settings_32.png",
+            "FileNameButtonReleased": "__designer\\Dark_Icons_Settings_32.png",
+            "ButtonX": 446,
+            "ButtonY": 240,
+            "State": "Collapsed",
+            "ExpandDirection": "South",
+            "Easing": "Cubic",
+            "EasingOption": "InOut",
+            "AnimationDuration": 300,
+            "VisiblePixelsWhenCollapsed": 34,
+            "HiddenPixelsWhenExpanded": 106,
+            "ExpandedStateTimeout": 15000,
+            "Name": "SlideConfigMenu",
+            "X": 0,
+            "Y": 0,
+            "Width": 480,
+            "Height": 272,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "btnRangeUp"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode"
+            }
+          }
+        ],
+        "Name": "Main",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 7200
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "TextEntries": [
+      {
+        "TextEntryId": "SingleUseId3",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId5",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId6",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId7",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId8",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId9",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId10",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId11",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId12",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId13",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId14",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId15",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId16",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId17",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId19",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId20",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId21",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId22",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId23",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId24",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId25",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId27",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId28",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId29",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId30",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId31",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId32",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId33",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId34",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId35",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId36",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId37",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId38",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId39",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId40",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId41",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId42",
+        "IsResource": false
+      }
+    ],
+    "Name": "PhilipsPM253x",
+    "Resolution": {
+      "Width": 480,
+      "Height": 272
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Splash",
+    "SelectedStartupLanguage": "GB",
+    "Skin": "Dark",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 480,
+        "Height": 272
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project --project-file=../PhilipsPM253x.ioc --platform=m7",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32F7"
+  },
+  "Version": "4.16.1"
+}

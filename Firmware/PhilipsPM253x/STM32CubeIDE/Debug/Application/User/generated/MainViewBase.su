@@ -1,0 +1,146 @@
+Types.hpp:94:5:touchgfx::colortype::colortype(uint32_t)	16	static
+Types.hpp:117:5:touchgfx::colortype::operator uint32_t() const	16	static
+Types.hpp:130:5:touchgfx::Rect::Rect()	16	static
+Types.hpp:146:5:touchgfx::Rect::Rect(int16_t, int16_t, int16_t, int16_t)	24	static
+Bitmap.hpp:127:5:touchgfx::Bitmap::Bitmap(touchgfx::BitmapId)	16	static
+Drawable.hpp:53:5:touchgfx::Drawable::Drawable()	24	static
+Drawable.hpp:64:13:touchgfx::Drawable::~Drawable()	16	static
+Drawable.hpp:64:13:virtual touchgfx::Drawable::~Drawable()	16	static
+Drawable.hpp:134:23:virtual touchgfx::Drawable* touchgfx::Drawable::getFirstChild()	16	static
+Drawable.hpp:218:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	24	static
+Drawable.hpp:271:18:virtual void touchgfx::Drawable::setX(int16_t)	16	static
+Drawable.hpp:283:18:virtual void touchgfx::Drawable::setY(int16_t)	16	static
+Drawable.hpp:299:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
+Drawable.hpp:312:18:virtual void touchgfx::Drawable::setWidth(int16_t)	16	static
+Drawable.hpp:324:18:virtual void touchgfx::Drawable::setHeight(int16_t)	16	static
+Drawable.hpp:334:18:virtual void touchgfx::Drawable::childGeometryChanged()	16	static
+Drawable.hpp:345:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	16	static
+Drawable.hpp:356:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	16	static
+Drawable.hpp:367:10:void touchgfx::Drawable::setWidthHeight(int16_t, int16_t)	16	static
+Drawable.hpp:444:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	16	static
+Drawable.hpp:454:18:virtual void touchgfx::Drawable::handleTickEvent()	16	static
+Drawable.hpp:490:10:bool touchgfx::Drawable::isVisible() const	16	static
+Drawable.hpp:502:10:bool touchgfx::Drawable::isTouchable() const	16	static
+Drawable.hpp:541:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	16	static
+Drawable.hpp:578:10:void touchgfx::Drawable::resetDrawChainCache()	16	static
+Drawable.hpp:656:18:virtual void touchgfx::Drawable::setupDrawChain(const touchgfx::Rect&, touchgfx::Drawable**)	24	static
+Container.hpp:45:5:touchgfx::Container::Container()	16	static
+Container.hpp:154:23:virtual touchgfx::Drawable* touchgfx::Container::getFirstChild()	16	static
+Screen.hpp:49:13:touchgfx::Screen::~Screen()	16	static
+Screen.hpp:49:13:virtual touchgfx::Screen::~Screen()	16	static
+Screen.hpp:96:18:virtual void touchgfx::Screen::setupScreen()	16	static
+Screen.hpp:107:18:virtual void touchgfx::Screen::afterTransition()	16	static
+Screen.hpp:118:18:virtual void touchgfx::Screen::tearDownScreen()	16	static
+Screen.hpp:147:18:virtual void touchgfx::Screen::handleTickEvent()	16	static
+Screen.hpp:157:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	16	static
+Screen.hpp:205:10:void touchgfx::Screen::add(touchgfx::Drawable&)	16	static
+HAL.hpp:109:17:static touchgfx::HAL* touchgfx::HAL::getInstance()	4	static
+HAL.hpp:226:17:static touchgfx::LCD& touchgfx::HAL::lcd()	4	static
+HAL.hpp:985:10:touchgfx::LCD* touchgfx::HAL::getAuxiliaryLCD()	16	static
+Widget.hpp:50:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	24	static
+Widget.hpp:39:7:touchgfx::Widget::Widget()	16	static
+Widget.hpp:39:7:touchgfx::Widget::~Widget()	16	static
+Widget.hpp:39:7:virtual touchgfx::Widget::~Widget()	16	static
+AbstractButton.hpp:34:7:touchgfx::AbstractButton::~AbstractButton()	16	static
+AbstractButton.hpp:34:7:virtual touchgfx::AbstractButton::~AbstractButton()	16	static
+Box.hpp:40:5:touchgfx::Box::Box()	16	static
+Box.hpp:70:10:void touchgfx::Box::setColor(touchgfx::colortype)	16	static
+Container.hpp:42:7:touchgfx::Container::~Container()	16	static
+Container.hpp:42:7:virtual touchgfx::Container::~Container()	16	static
+Color.hpp:51:22:static touchgfx::colortype touchgfx::Color::getColorFrom24BitRGB(uint8_t, uint8_t, uint8_t)	24	static
+TypedText.hpp:62:14:touchgfx::TypedText::TypedText(touchgfx::TypedTextId)	16	static
+TypedText.hpp:68:13:touchgfx::TypedText::~TypedText()	16	static
+TypedText.hpp:68:13:virtual touchgfx::TypedText::~TypedText()	16	static
+TextArea.hpp:47:5:touchgfx::TextArea::TextArea()	16	static
+TextArea.hpp:44:7:touchgfx::TextArea::~TextArea()	16	static
+TextArea.hpp:44:7:virtual touchgfx::TextArea::~TextArea()	16	static
+AbstractPainter.hpp:45:5:touchgfx::AbstractPainter::AbstractPainter()	16	static
+AbstractPainter.hpp:54:13:touchgfx::AbstractPainter::~AbstractPainter()	16	static
+AbstractPainter.hpp:54:13:virtual touchgfx::AbstractPainter::~AbstractPainter()	16	static
+AbstractPainter.hpp:97:18:virtual void touchgfx::AbstractPainter::setAlpha(uint8_t)	16	static
+AbstractPainter.hpp:103:21:virtual uint8_t touchgfx::AbstractPainter::getAlpha() const	16	static
+CWRUtil.hpp:71:18:touchgfx::CWRUtil::Q5::Q5(int)	16	static
+CWRUtil.hpp:94:9:touchgfx::CWRUtil::Q5::operator int() const	16	static
+CanvasWidget.hpp:67:18:virtual void touchgfx::CanvasWidget::setAlpha(uint8_t)	16	static
+CanvasWidget.hpp:73:21:virtual uint8_t touchgfx::CanvasWidget::getAlpha() const	16	static
+GraphElements.hpp:251:18:virtual void touchgfx::AbstractGraphElementNoCWR::setPainter(touchgfx::AbstractPainter&)	16	static
+AbstractPainterRGB565.hpp:44:5:touchgfx::AbstractPainterRGB565::AbstractPainterRGB565()	24	static
+AbstractPainterRGB565.hpp:37:7:touchgfx::AbstractPainterRGB565::~AbstractPainterRGB565()	16	static
+AbstractPainterRGB565.hpp:37:7:virtual touchgfx::AbstractPainterRGB565::~AbstractPainterRGB565()	16	static
+PainterRGB565.hpp:45:5:touchgfx::PainterRGB565::PainterRGB565(touchgfx::colortype, uint8_t)	24	static
+PainterRGB565.hpp:57:10:void touchgfx::PainterRGB565::setColor(touchgfx::colortype)	16	static
+ButtonWithIcon.hpp:81:10:void touchgfx::ButtonWithIcon::setIconX(int16_t)	16	static
+ButtonWithIcon.hpp:96:10:void touchgfx::ButtonWithIcon::setIconY(int16_t)	16	static
+ButtonWithIcon.hpp:113:10:void touchgfx::ButtonWithIcon::setIconXY(int16_t, int16_t)	16	static
+TypedText.hpp:44:7:constexpr touchgfx::TypedText& touchgfx::TypedText::operator=(const touchgfx::TypedText&)	16	static
+ButtonWithLabel.hpp:52:10:void touchgfx::ButtonWithLabel::setLabelText(touchgfx::TypedText)	16	static
+ButtonWithLabel.hpp:79:10:void touchgfx::ButtonWithLabel::setLabelColor(touchgfx::colortype)	16	static
+ButtonWithLabel.hpp:96:10:void touchgfx::ButtonWithLabel::setLabelColorPressed(touchgfx::colortype)	16	static
+ButtonWithLabel.hpp:134:10:void touchgfx::ButtonWithLabel::updateTextPosition()	56	static
+DigitalClock.hpp:103:18:virtual void touchgfx::DigitalClock::setDisplayMode(touchgfx::DigitalClock::DisplayMode)	16	static
+Line.hpp:267:10:void touchgfx::Line::setLineWidth(touchgfx::CWRUtil::Q5)	24	static
+View.hpp:40:7:touchgfx::View<MainPresenter>::~View()	16	static
+View.hpp:40:7:virtual touchgfx::View<MainPresenter>::~View()	16	static
+MainViewBase.hpp:28:13:MainViewBase::~MainViewBase()	16	static
+MainViewBase.hpp:28:13:virtual MainViewBase::~MainViewBase()	16	static
+CanvasWidget.hpp:40:7:touchgfx::CanvasWidget::~CanvasWidget()	16	static
+CanvasWidget.hpp:40:7:virtual touchgfx::CanvasWidget::~CanvasWidget()	16	static
+GraphElements.hpp:29:7:touchgfx::AbstractGraphElement::~AbstractGraphElement()	16	static
+GraphElements.hpp:29:7:virtual touchgfx::AbstractGraphElement::~AbstractGraphElement()	16	static
+GraphElements.hpp:210:7:touchgfx::AbstractGraphElementNoCWR::~AbstractGraphElementNoCWR()	16	static
+GraphElements.hpp:210:7:virtual touchgfx::AbstractGraphElementNoCWR::~AbstractGraphElementNoCWR()	16	static
+GraphElements.hpp:257:7:touchgfx::GraphElementGridBase::~GraphElementGridBase()	16	static
+GraphElements.hpp:257:7:virtual touchgfx::GraphElementGridBase::~GraphElementGridBase()	16	static
+GraphElements.hpp:379:7:touchgfx::GraphElementGridY::GraphElementGridY()	16	static
+GraphElements.hpp:353:7:touchgfx::GraphElementGridX::GraphElementGridX()	16	static
+GraphLabels.hpp:30:7:touchgfx::AbstractGraphDecoration::~AbstractGraphDecoration()	16	static
+GraphLabels.hpp:30:7:virtual touchgfx::AbstractGraphDecoration::~AbstractGraphDecoration()	16	static
+GraphLabels.hpp:39:7:touchgfx::GraphLabelsBase::~GraphLabelsBase()	16	static
+GraphLabels.hpp:39:7:virtual touchgfx::GraphLabelsBase::~GraphLabelsBase()	16	static
+GraphLabels.hpp:203:7:touchgfx::GraphLabelsX::GraphLabelsX()	16	static
+GraphLabels.hpp:240:7:touchgfx::GraphLabelsY::GraphLabelsY()	16	static
+MainViewBase.cpp:9:1:MainViewBase::MainViewBase()	760	static
+MainViewBase.cpp:576:6:virtual void MainViewBase::setupScreen()	16	static
+View.hpp:43:5:touchgfx::View<T>::View() [with T = MainPresenter]	16	static
+AbstractDataGraph.hpp:38:7:touchgfx::AbstractDataGraph::~AbstractDataGraph()	16	static
+AbstractDataGraph.hpp:38:7:virtual touchgfx::AbstractDataGraph::~AbstractDataGraph()	16	static
+AbstractDataGraph.hpp:900:7:touchgfx::AbstractDataGraphWithY::~AbstractDataGraphWithY()	16	static
+AbstractDataGraph.hpp:900:7:virtual touchgfx::AbstractDataGraphWithY::~AbstractDataGraphWithY()	16	static
+GraphWrapAndClear.hpp:33:7:touchgfx::DataGraphWrapAndClear::~DataGraphWrapAndClear()	16	static
+GraphWrapAndClear.hpp:33:7:virtual touchgfx::DataGraphWrapAndClear::~DataGraphWrapAndClear()	16	static
+GraphWrapAndClear.hpp:61:5:touchgfx::GraphWrapAndClear<CAPACITY>::GraphWrapAndClear() [with short int CAPACITY = 100]	16	static
+Line.hpp:100:10:void touchgfx::Line::setStart(T, T) [with T = int]	48	static
+Line.hpp:176:10:void touchgfx::Line::setEnd(T, T) [with T = int]	48	static
+Line.hpp:253:10:void touchgfx::Line::setLineWidth(T) [with T = int]	24	static
+GraphWrapAndClear.hpp:58:7:touchgfx::GraphWrapAndClear<100>::~GraphWrapAndClear()	16	static
+GraphWrapAndClear.hpp:58:7:virtual touchgfx::GraphWrapAndClear<100>::~GraphWrapAndClear()	16	static
+Box.hpp:36:7:touchgfx::Box::~Box()	16	static
+Box.hpp:36:7:virtual touchgfx::Box::~Box()	16	static
+GraphElements.hpp:466:7:touchgfx::GraphElementLine::~GraphElementLine()	16	static
+GraphElements.hpp:466:7:virtual touchgfx::GraphElementLine::~GraphElementLine()	16	static
+PainterRGB565.hpp:36:7:touchgfx::PainterRGB565::~PainterRGB565()	16	static
+PainterRGB565.hpp:36:7:virtual touchgfx::PainterRGB565::~PainterRGB565()	16	static
+GraphElements.hpp:379:7:touchgfx::GraphElementGridY::~GraphElementGridY()	16	static
+GraphElements.hpp:379:7:virtual touchgfx::GraphElementGridY::~GraphElementGridY()	16	static
+GraphElements.hpp:353:7:touchgfx::GraphElementGridX::~GraphElementGridX()	16	static
+GraphElements.hpp:353:7:virtual touchgfx::GraphElementGridX::~GraphElementGridX()	16	static
+GraphLabels.hpp:203:7:touchgfx::GraphLabelsX::~GraphLabelsX()	16	static
+GraphLabels.hpp:203:7:virtual touchgfx::GraphLabelsX::~GraphLabelsX()	16	static
+GraphLabels.hpp:240:7:touchgfx::GraphLabelsY::~GraphLabelsY()	16	static
+GraphLabels.hpp:240:7:virtual touchgfx::GraphLabelsY::~GraphLabelsY()	16	static
+Button.hpp:33:7:touchgfx::Button::~Button()	16	static
+Button.hpp:33:7:virtual touchgfx::Button::~Button()	16	static
+ButtonWithIcon.hpp:36:7:touchgfx::ButtonWithIcon::~ButtonWithIcon()	16	static
+ButtonWithIcon.hpp:36:7:virtual touchgfx::ButtonWithIcon::~ButtonWithIcon()	16	static
+ButtonWithLabel.hpp:40:7:touchgfx::ButtonWithLabel::~ButtonWithLabel()	16	static
+ButtonWithLabel.hpp:40:7:virtual touchgfx::ButtonWithLabel::~ButtonWithLabel()	16	static
+GraphElements.hpp:549:7:touchgfx::GraphElementHistogram::~GraphElementHistogram()	16	static
+GraphElements.hpp:549:7:virtual touchgfx::GraphElementHistogram::~GraphElementHistogram()	16	static
+AbstractClock.hpp:36:7:touchgfx::AbstractClock::~AbstractClock()	16	static
+AbstractClock.hpp:36:7:virtual touchgfx::AbstractClock::~AbstractClock()	16	static
+TextAreaWithWildcard.hpp:37:7:touchgfx::TextAreaWithOneWildcard::~TextAreaWithOneWildcard()	16	static
+TextAreaWithWildcard.hpp:37:7:virtual touchgfx::TextAreaWithOneWildcard::~TextAreaWithOneWildcard()	16	static
+DigitalClock.hpp:39:7:touchgfx::DigitalClock::~DigitalClock()	16	static
+DigitalClock.hpp:39:7:virtual touchgfx::DigitalClock::~DigitalClock()	16	static
+Line.hpp:55:7:touchgfx::Line::~Line()	16	static
+Line.hpp:55:7:virtual touchgfx::Line::~Line()	16	static

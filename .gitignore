@@ -1,0 +1,6 @@
+
+Firmware/.metadata
+*.obj
+*.bin
+*.lck
+*.ctb
